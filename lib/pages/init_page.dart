@@ -1,4 +1,5 @@
-import 'package:app12_youtube_2024/ui/colors.dart';
+import 'package:app12_youtube_2024/pages/home_page.dart';
+import 'package:app12_youtube_2024/ui/general/colors.dart';
 import 'package:flutter/material.dart';
 
 class InitPage extends StatefulWidget {
@@ -11,20 +12,62 @@ class InitPage extends StatefulWidget {
 class _InitPageState extends State<InitPage> {
   int _currentIndex = 0;
 
-  List<Widget> _pages=[
-    Center(child: Text("principal")),
-    Center(child: Text("shorts")),
-    Center(child: Text("agregar")),
-    Center(child: Text("suscripciones")),
-    Center(child: Text("biblioteca")),
+  List<Widget> _pages = [
+    HomePage(),
+    Center(child: Text("Shorts")),
+    Center(child: Text("Agregar")),
+    Center(child: Text("Suscripciones")),
+    Center(child: Text("Biblioteca")),
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kBrandPrimaryColor,
       appBar: AppBar(
         backgroundColor: kBrandPrimaryColor,
-        title: Image.asset("asset/img/logo.png"),
+        title: Image.asset(
+          "assets/images/logo.png",
+          height: 26,
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.cast,
+              color: Colors.white,
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.notification_add,
+              color: Colors.white,
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.search,
+              color: Colors.white,
+            ),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          CircleAvatar(
+            backgroundColor: kBrandSecundaryColor,
+            backgroundImage: NetworkImage(
+              "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            ),
+            radius: 15,
+          ),
+          SizedBox(
+            width: 12,
+          ),
+        ],
       ),
+      body: _pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: kBrandPrimaryColor,
         type: BottomNavigationBarType.fixed,
@@ -77,5 +120,3 @@ class _InitPageState extends State<InitPage> {
     );
   }
 }
-
-class 
