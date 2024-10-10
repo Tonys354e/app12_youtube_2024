@@ -163,7 +163,7 @@ class VideoDetailPage extends StatelessWidget {
 
   Future<List<String>> fetchComments(String videoId) async {
     final response = await http.get(
-      Uri.parse('https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=$videoId&key=AIzaSyAaOa7DgE461eKAN5okwXdL6L94ILWgSvg'), 
+      Uri.parse('https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=$videoId&key=AIzaSyD5vXtKXP98jRwTlnLafnqkKVeS7NVuzRE'), 
     );
 
     if (response.statusCode == 200) {

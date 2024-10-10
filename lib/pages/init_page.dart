@@ -24,10 +24,10 @@ class _InitPageState extends State<InitPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kBrandPrimaryColor,
+      backgroundColor: Colors.pink,
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        backgroundColor: kBrandPrimaryColor,
+        backgroundColor: Colors.pink[300],
         title: Image.asset(
           "assets/images/logo.png",
           height: 26,

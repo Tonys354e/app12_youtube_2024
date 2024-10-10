@@ -6,7 +6,7 @@ class APIService {
   Future<List<VideoModel>> getVideos() async {
     List<VideoModel> videosModel = [];
     String path =
-        "https://youtube.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyD5vXtKXP98jRwTlnLafnqkKVeS7NVuzRE&maxResults=20&regionCode=PE";
+        "https://youtube.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyD5vXtKXP98jRwTlnLafnqkKVeS7NVuzRE&maxResults=20&regionCode=JP";
     Uri uri = Uri.parse(path);
     http.Response response = await http.get(uri);
 

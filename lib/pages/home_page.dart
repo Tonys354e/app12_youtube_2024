@@ -79,6 +79,7 @@ class _HomePageprofState extends State<HomePageprof> {
                   SizedBox(
                     height: 38.0,
                     child: VerticalDivider(
+                    
                       color: kBrandSecundaryColor,
                       thickness: 1.0,
                     ),

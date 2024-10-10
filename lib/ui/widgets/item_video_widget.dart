@@ -34,7 +34,7 @@ class ItemVideoWidget extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
                     color: Colors.black.withOpacity(0.7),
                     child: Text(
-                      videoModel.duration.isNotEmpty ? videoModel.duration : 'Duración no disponible', 
+                      videoModel.duration.isNotEmpty ? videoModel.duration : 'Duracion no esta disponible pz mano', 
                       style: const TextStyle(
                         color: Colors.white,
                       ),
