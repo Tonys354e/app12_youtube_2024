@@ -24,10 +24,10 @@ class _InitPageState extends State<InitPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.pink,
+      backgroundColor: kBrandPrimaryColor,
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        backgroundColor: Colors.pink[300],
+        backgroundColor: Color(0xFF364A3E),
         title: Image.asset(
           "assets/images/logo.png",
           height: 26,
@@ -66,7 +66,7 @@ class _InitPageState extends State<InitPage> {
                     minHeight: 10,
                   ),
                   child: const Text(
-                    '9+',
+                    '+PE',
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
